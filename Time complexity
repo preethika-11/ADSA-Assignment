@@ -1,0 +1,16 @@
+Time complexity:
+The selection sort algorithm is a simple comparison-based sorting algorithm that divides the input list into two parts: a sorted part and an unsorted part. It repeatedly selects the smallest (or largest, depending on the sorting order) element from the unsorted part and moves it to the end of the sorted part. The time complexity of the selection sort algorithm is as follows:
+Worst Case Complexity: O(n2)
+If we want to sort in ascending order and the array is in descending order then, the worst case occurs.
+Best Case Complexity: O(n2)
+It occurs when the array is already sorted 
+Average Case Complexity: O(n2)
+It occurs when the elements of the array are in jumbled order (neither ascending nor descending).
+Stability:
+Selection sort is not a stable sorting algorithm. Stability means that when two elements have equal keys, their relative order is preserved in the sorted output. In selection sort, the relative order of equal elements may change, making it an unstable sorting algorithm.
+Quicksort Time Complexity:
+Best-case: O(n log n)
+Average-case: O(n log n)
+Worst-case: O(n^2)
+Quicksort is generally faster than selection sort for most scenarios, especially when dealing with larger datasets. It has an average-case time complexity of O(n log n), which makes it more efficient for sorting large datasets compared to the time complexity of selection sort. However, quicksort has a worst-case time complexity of O(n^2), which can happen if the pivot selection strategy is not well-balanced or if the input data is already sorted.
+Selection sort is a simple but inefficient sorting algorithm with a time complexity of O(n^2) for all scenarios. It is not stable and doesn't perform well on any type of input data. Quicksort, on the other hand, is more efficient on average and performs well in practice for most datasets, but it can have a worst-case scenario. Therefore, if you have a large dataset and want to optimize for average-case performance, quicksort is generally preferred. However, if you need a simple sorting algorithm for small datasets and stability is not a concern, selection sort may be used.
